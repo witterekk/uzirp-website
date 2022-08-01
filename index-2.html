@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+	
+
+<!-- Mirrored from uzirp.pl by Witter Web Copier   |  Date: Mon, 01 Aug 2022 14:57:44 GMT -->
+<!-- Added by Witter Web Copier --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- Added by Witter Web Copier -->
+<head>
+		<title>UziRP.pl | Strona Główna</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/logonowe.png" type="image"/>
+		<meta name="description" content="UziRP to serwer roleplay na platformie FiveM, który już 01.08.2022 wraca do żywych z pełnym impetem po 7-miesięcznej przerwie.">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.html" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+							<div class="inner">
+								<img src="images/logonowe.png" width="150" height="150">
+								<h1 class="napis1">POLSKI SERWER ROLEPLAY</h1>
+								<h2 id="zegar"></h2>
+								
+								<p>IP: <b>uzirp.pl</b></p>
+								<section id="b-s"></section>
+							</div>
+							<div>
+								<nav>
+									<ul>
+										<li><a href="fivem://connect/uzirp.pl" class="fivem">Kliknij aby wejść na serwer</a></li>
+									</ul>
+								</nav>
+							</div>
+						<nav>
+							<ul>
+								<li><a href="https://discord.gg/Fmz6dapRqu" target="_blank">Discord</a></li>
+								<li><a href="#regulamin">Regulamin</a></li>
+								<li><a href="#">WL:OFF</a></li>
+								<li><a href="#donate">Donate</a></li>
+								<li><a href="podania.html">Podania</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Glowne -->
+					<div id="main">
+
+						<!-- Regulamin -->
+								<article id="regulamin">
+								<h1 class="napis2">Regulamin</h1>
+								<span class="image main"></span>
+									<iframe width="750" height="900" src="https://docs.google.com/document/d/e/2PACX-1vR6Zu8lTq-s1hQv00CjpK3_vPcC8rqoEDbFeYMO512qg-kxgLb3IkTxGrLZvzeIJQEXUix3zYvLfbb4/pub?embedded=true"></iframe>
+								</article>
+
+
+						<!-- Work -->
+							<article id="donate">
+								<h2 class="major">Donate</h2>
+								<h3>Część I</h3>
+								<p>Firma - 50 PLN</p>
+
+								<p>Limitowany Dom/interior - 60 PLN</p>
+								
+								<p>Customowy Numer Telefonu - 10 PLN</p>
+								
+								<p>Customowa Tablicja Rejestracyjna  - 10 PLN</p>
+								
+								<p>Priorytet w kolejce  - 20 PLN</p>
+								
+								<p>Wybranie Piosenki Na Loading Screen  - 10 PLN</p>
+								
+								<p>Customowa Tablica Rejestracyjna  - 10 PLN</p>
+								
+								<h3>Część II</h3>
+								
+								<p>Auto Z CarDealera  - 30 PLN</p>
+								
+								<p>Wybierasz Auto Które Dodamy Do CarDealera  - 20 PLN</p>
+								
+								<p>Boost Limitki  - 30 PLN</p>
+								
+								<p>Zmiana Limitki   - 20 PLN</p>
+								
+								<p>Limitowany Samochód  - 50 PLN</p>
+								
+								<h3>Część III</h3>
+								
+								<p>Unban 2/4 dni   - 7 PLN</p>
+								
+								<p>Unban 5/14 dni  - 20 PLN</p>
+								
+								<p>Unban 14dni/miesiac   - 30 PLN</p>
+								
+								<p>Unban perm   - 50 PLN</p>
+								
+								<h5>Wszelkie wasze wpłaty poświęcamy na: Kupno skryptów, opłacenie hostingu oraz klucz licencyjny.</h5>																								
+								
+							<p>	Płatności: PSC (prowizja 15%), paypal, przelew, blik.</p>
+							</article>
+
+					</div>
+
+				<!-- Stopka -->
+					<footer id="footer">
+						<p class="copyright">&copy; UziRP.pl</p>
+					</footer>
+
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				$(document).ready(function() {
+				$("#b-s").load("server-info.html");
+				var intervalId = window.setInterval(function() {
+				$("#b-s").load("server-info.html");
+				}, 120);
+				});
+			</script>
+			<script>
+    var countDownDate = new Date("Aug 1, 2022 19:00:00").getTime();
+    var x = setInterval(function() {
+    
+      var now = new Date().getTime();
+    
+      var distance = countDownDate - now;
+    
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      document.getElementById("zegar").innerHTML = "Start za: " + days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("zegar").innerHTML = "Serwer już wystartował!";
+      }
+    }, 1000);
+    </script>
+	</body>
+
+
+<!-- Mirrored from uzirp.pl by Witter Web Copier   |  Date: Mon, 01 Aug 2022 14:57:44 GMT -->
+</html>

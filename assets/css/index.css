@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../../images/gta.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topNav__wrapper {
+    width: 100%;
+    padding: 20px 15px;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, .4);
+}
+
+.topNav__logoWrapper {
+    display: flex;
+    align-items: baseline;
+    color: white;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, .4);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.topNav__logoWrapper_logo {
+    max-width: 50px;
+}
+
+.topNav__discordBtn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    background: #7289DA;
+    border-radius: 3px;
+}
+
+.topNav__discordBtn img {
+    margin-right: 20px;
+    width: 22px;
+}
+
+.mainNav__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.mainNav__buttonsWrapper {
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.mainNav__btnWrapper {
+    position: relative;
+    transition: transform .5s ease;
+}
+
+.mainNav__item {
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    height: 200px;
+    width: 170px;
+    text-decoration: none;
+    margin-right: 22px;
+    box-shadow: 0px 10px 20px -2px rgba(0, 0, 0, .7);
+    background: #80808000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    animation: appear 1s ease both;
+    transition: all 1s ease;
+}
+
+.mainNav__btnWrapper:hover {
+    transform: translateY(-10px);
+
+}
+
+#sams {
+    background-image: url("../../images/sams.png");
+}
+
+
+#sams .mainNav__item__description {
+    background: #e12f2f;
+}
+
+
+#sasp {
+    background-image: url("../../images/sasp.png");
+}
+
+#sasp .mainNav__item__description {
+    background: #2478e1;
+}
+
+p {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#customs {
+    background-image: url("../../images/uzicustoms.png");
+}
+
+#customs .mainNav__item__description {
+    background: #636f78;
+}
+
+#support {
+    background-image: url("../../images/support.png");
+}
+
+#support .mainNav__item__description {
+    background: #c99943;
+}
+
+#crime {
+    background-image: url("../../images/crime.png");
+}
+
+#crime .mainNav__item__description {
+    background: #212124;
+}
+
+.mainNav__item__description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12px 5px;
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        top: 22px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+
+}
+.button {
+    text-align: center;
+    display: inline-block;
+    color: rgb(143, 143, 143);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    font-size: 100%;
+    background-color: rgb(50 50 50);
+    transition: background-color 0.2s ease;
+    width: 120px;
+    padding: 10px;
+    margin: 10px;
+    transition: 300ms;
+}
+
+/* Footer */
+
+	#footer {
+		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		width: 100%;
+		max-width: 100%;
+		margin-top: 26rem;
+		text-align: center;
+	}
+
+		#footer .copyright {
+			letter-spacing: 0.2rem;
+			font-size: 0.6rem;
+			opacity: 0.75;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+
+		body.is-article-visible #footer {
+			-moz-transform: scale(0.95);
+			-webkit-transform: scale(0.95);
+			-ms-transform: scale(0.95);
+			transform: scale(0.95);
+			-moz-filter: blur(0.1rem);
+			-webkit-filter: blur(0.1rem);
+			-ms-filter: blur(0.1rem);
+			filter: blur(0.1rem);
+			opacity: 0;
+		}
+
+		body.is-preload #footer {
+			opacity: 0;
+		}
